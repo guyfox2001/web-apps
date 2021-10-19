@@ -14,74 +14,113 @@ body{
 }
 
 .main{
-    position: relative;
-    width: 75%;
+    width: 1600px;
     height: max-content;
     padding: 4%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background: #777777;
     border: 1px solid #000000;
     box-sizing: border-box;
     backdrop-filter: blur(33px);
-    align-content: center;
     border-radius: 45px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "."
+    ".";
 }
 
 .hat{
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: min-content;
     padding: 4%;
     background: #C4C4C4;
     border: 2px solid #000000;
     box-sizing: border-box;
-    clip-path: polygon(0 0, 84% 9%, 100% 100%, 0 71%);
     display: flex;
     justify-content: flex-end;
-    padding-right: 10%;
-    margin-left: 10%;
-
+    position: relative;
 }
 
 .hat-text{
     text-align: right;
-    width: 45%;
+    width: 50%;
     font-family: Roboto;
     font-style: normal;
     font-weight: 200;
     font-size: 150%;
 }
-.hat-photo{
-    width: 16%;
-    height: 59%;
-    top: 10%;
-    left: 11%;
-    position: absolute;
-    background: url(img/car.jpg);
+.hat-grid{
+    display: grid;
+    grid-template-columns: 8% 1.6fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". .";
+}
+.hat-photo {
+    position: relative;
+    width: 243px;
+    height: 242px;
+    top: -10%;
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 100px;
-    z-index: 10;
+    border-radius: 180px;
+    z-index: 100;
 }
-.main-info{
-    width: 1058px;
-    height: 733px;
 
+.photo1{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.main-info{
+    width: 100%;
+    height: 733px;
     background: #C4C4C4;
     border: 1px solid #000000;
     box-sizing: border-box;
-    clip-path: polygon(0 0, 90% 11%, 100% 100%, 16% 100%);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column
 }
 
-.main-text{
+.main-text {
     font-family: Roboto;
-    font-style: italic;
+    font-style: oblique;
     font-weight: 300;
     font-size: 24px;
     line-height: 134.19%;
-
+    margin-right: 5%;
     text-align: right;
 
-    color: #B10F0F;}
+    color: #B10F0F;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-template-areas:
+    ". .";
+}
+.main-contacts{
+    width: 100%;
+    background: #C4C4C4;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+.main-photo{
+    width: 80%;
+    height: 64%;
+    clip-path: polygon(0 0, 75% 7%, 83% 100%, 7% 100%);
+}
+
+.contacts-text{
+
+}
